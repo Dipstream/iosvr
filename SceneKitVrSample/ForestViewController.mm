@@ -106,7 +106,7 @@
     SCNMaterial *bearMat = bear.geometry.materials.firstObject;
     bearMat.emission.contents = [UIColor colorWithWhite:0.25f alpha:1.0f];
     
-    renderer = [SCNRenderer rendererWithContext:(void*)glView.context options:nil];
+    renderer = [SCNRenderer rendererWithContext:glView.context options:nil];
     renderer.scene = scene;
 
 #if defined(DEBUG)
