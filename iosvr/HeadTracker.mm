@@ -268,6 +268,9 @@ namespace iosvr
         else if ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationLandscapeRight)
         {
             _displayFromDevice = GetRotateEulerMatrix(0.f, 0.f, -90.f);
+        } else if ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait)
+        {
+            _displayFromDevice = GetRotateEulerMatrix(0.f, 0.f, 0.f);
         }
     }
 
